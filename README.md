@@ -21,6 +21,6 @@ For bugs, please contact and raise a ticket with Field Engineering Team.
 
 
 ## 🤝 Contributing
-We are open for your [contribution(https://github.com/mcafee-enterprise/ExpertRules/tree/main/COMMUNITY)].
+We are open for your [[contribution](https://github.com/mcafee-enterprise/ExpertRules/tree/main/COMMUNITY)].
 
 ## 📝 License
