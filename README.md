@@ -17,6 +17,21 @@ The rules are classified into 2 major groups:
 Trellix recommends that all the Expert rules listed under *TRELLIX* and *COMMUNITY* repositories are validated on a non-production test environment based on the Customer's requirement. Customers should exercise caution in deploying the Expert rules in their environment. 
 
 
+## 🚀 Adding an Expert Rule
+
+1. Log on to EPO Console using your credentials
+2. Go to "Policy Catalog" page from the menu
+
+
+3. Click on Endpoint Security Threat Prevention Product and select Exploit Prevention.
+
+
+4. Click on Edit button corresponding to policy you want to update
+5. Click on "Show Advanced" button to view advanced settings for Exploit Prevention
+6. Go to "Signatures" section and click on Add Expert Rule button
+7. Fill in details for *Rule name*, *Severity*, *Action*, *Rule Type* and *Rule Content*
+8. Click on "Save" to save an expert rule
+
 ## BUGS and FEEDBACK
 
 For bugs related to Expert Rules, please get in touch with Trellix Field Engineering Team and raise a ticket.
@@ -24,4 +39,4 @@ For bugs related to Expert Rules, please get in touch with Trellix Field Enginee
 For any other issues or feedback. Please raise an [issue](https://github.com/mcafee-enterprise/ExpertRules/issues) 
 
 ## 🤝 Contributing
-We are open for your [contribution](COMMUNITY).
+Thanks for taking the time to [contribute](COMMUNITY)!
