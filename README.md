@@ -20,4 +20,7 @@ McAfee recommends that all the Expert rules listed under *MCAFEE* and *COMMUNITY
 For bugs, please contact and raise a ticket with Field Engineering Team.
 
 
+## 🤝 Contributing
+We are open for your contribution. [[contribution](https://github.com/mcafee-enterprise/ExpertRules/tree/main/COMMUNITY)]
+
 ## 📝 License
