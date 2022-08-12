@@ -38,7 +38,7 @@ IMPORTANT: Trellix recommends testing Expert Rules in a non-production test envi
 8. Click on `Save` to save an expert rule
 
 
-## Bugs and Feedback
+## Support
 
 For bugs related to Expert Rules, please get in touch with Trellix Field Engineering Team and raise a ticket.<br />
 For any other issues or feedback. Please raise an [issue](https://github.com/mcafee-enterprise/ExpertRules/issues) 
@@ -46,3 +46,5 @@ For any other issues or feedback. Please raise an [issue](https://github.com/mca
 ## 🤝 Contributing
 
 Thanks for taking the time to [contribute](COMMUNITY)!
+
+## Authors and acknowledgment
