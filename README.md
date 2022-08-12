@@ -20,20 +20,26 @@ Trellix recommends that all the Expert rules listed under *TRELLIX* and *COMMUNI
 ## 🚀 Adding an Expert Rule
 
 1. Log on to EPO Console using your credentials
-2. Go to "Policy Catalog" page from the menu
+2. Go to `Policy Catalog` page from the menu
+
+![image](https://user-images.githubusercontent.com/89252889/184320753-cd0be6cc-5ec6-428e-8a9f-75243933dcb0.png)
+
+3. Click on `Endpoint Security Threat Prevention` Product and select `Exploit Prevention`
+4. Click on `Edit` button corresponding to policy you want to update
+
+![image](https://user-images.githubusercontent.com/89252889/184321097-eaaa7e72-9732-4b1c-9016-7f406d25bf8f.png)
+
+5. Click on `Show Advanced` button to view advanced settings for Exploit Prevention
+6. Go to `Signatures` section and click on `Add Expert Rule` button
+
+![image](https://user-images.githubusercontent.com/89252889/184321778-48601b6b-ecc4-4469-b799-5dc933608b05.png)
 
 
-3. Click on Endpoint Security Threat Prevention Product and select Exploit Prevention.
+7. Fill in details for *`Rule name`*, *`Severity`*, *`Action`*, *`Rule Type`* and *`Rule Content`*
+8. Click on `Save` to save an expert rule
 
 
-4. Click on Edit button corresponding to policy you want to update
-5. Click on "Show Advanced" button to view advanced settings for Exploit Prevention
-6. Go to "Signatures" section and click on Add Expert Rule button
-7. Fill in details for *Rule name*, *Severity*, *Action*, *Rule Type* and *Rule Content*
-8. Click on "Save" to save an expert rule
-
-
-## BUGS and FEEDBACK
+## Bugs and Feedback
 
 For bugs related to Expert Rules, please get in touch with Trellix Field Engineering Team and raise a ticket.
 
