@@ -16,6 +16,8 @@ The rules are classified into 2 major groups:
 *Note:*
 Trellix recommends that all the Expert rules listed under *TRELLIX* and *COMMUNITY* repositories are validated on a non-production test environment based on the Customer's requirement. Customers should exercise caution in deploying the Expert rules in their environment. 
 
+![image](https://user-images.githubusercontent.com/89252889/184314344-33f8556f-b112-4271-8748-eac419a64d93.png)
+
 
 ## BUGS and FEEDBACK
 
