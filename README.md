@@ -13,3 +13,8 @@ The rules are classified into 2 major groups:
 
 *Note:*
 McAfee recommends that all the Expert rules listed under *MCAFEE* and *COMMUNITY* repositories are validated on a non-production test environment based on the Customer's requirement. Customers should exercise caution in deploying the Expert rules in their environment. 
+
+
+## BUGS and FEEDBACK
+
+For bugs, please contact and raise a ticket with Field Engineering Team.
