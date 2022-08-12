@@ -18,3 +18,6 @@ McAfee recommends that all the Expert rules listed under *MCAFEE* and *COMMUNITY
 ## BUGS and FEEDBACK
 
 For bugs, please contact and raise a ticket with Field Engineering Team.
+
+
+## 📝 License
