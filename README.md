@@ -32,6 +32,7 @@ Trellix recommends that all the Expert rules listed under *TRELLIX* and *COMMUNI
 7. Fill in details for *Rule name*, *Severity*, *Action*, *Rule Type* and *Rule Content*
 8. Click on "Save" to save an expert rule
 
+
 ## BUGS and FEEDBACK
 
 For bugs related to Expert Rules, please get in touch with Trellix Field Engineering Team and raise a ticket.
@@ -39,4 +40,5 @@ For bugs related to Expert Rules, please get in touch with Trellix Field Enginee
 For any other issues or feedback. Please raise an [issue](https://github.com/mcafee-enterprise/ExpertRules/issues) 
 
 ## 🤝 Contributing
+
 Thanks for taking the time to [contribute](COMMUNITY)!
