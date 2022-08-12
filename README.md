@@ -5,13 +5,9 @@
 This repository contains the set of rules that can be used with Trellix Endpoint Security in the Exploit Prevention policy. 
 The rules are classified into 2 major groups:
 
-*1. TRELLIX* 
-		- Contains the rules that are either authored by Trellix or derived from the Community authored expert rules. It contains different categories of Expert rules considering the purpose of the rule. All the rules within the *GENERIC_RULES* folder under *TRELLIX* can be considered as examples for learning.
-		- These Expert rules in their current form have undergone validation for syntax, functionality and limited QA has been performed on a selected set of platforms. The rules are typically documented to provide details on the tested environment, links to techniques, limitations (if any), etc. Customer may further customize these template rules to suit their environment.
+*1. TRELLIX* : This folder contains Expert rules that are authored by Team Trellix or are derived from the Community authored expert rules. It contains different categories of Expert rules considering the purpose of the rule. All the rules within the *GENERIC_RULES* folder under *TRELLIX* can be considered as examples for learning. These Expert rules in all other sub folders, in their current form have undergone validation for syntax, functionality and limited quality analysis has been performed on a selected set of platforms. The rules are typically documented to provide details on the tested environment, links to techniques, limitations (if any), etc. Customers are encouraged to customize these rules to suit their environment and reduce false positive trigger alerts.
 		
-*2. COMMUNITY* 
-		- Contains rules authored by Expert Rule Community
-		- The Expert Rule community comprises of External Contributors to Trellix Endpoint Security product in terms of authoring Exploit Prevention Expert Rules. This comprises of Blue teamers, Customers, Security Professionals, SOC, etc.
+*2. COMMUNITY* : This folder contains rules authored by Expert Rule Community - The Expert Rule community comprises of External Contributors to Trellix Endpoint Security product in terms of authoring Exploit Prevention Expert Rules. This comprises of Blue teamers, Customers, Security Professionals, SOC, etc.
 
 IMPORTANT: Trellix recommends testing Expert Rules in a non-production test environment to ensure rule integrity, and to prevent conflicts with unique environment configurations. Customers should exercise caution when deploying Expert Rules in their environment.
 
@@ -40,11 +36,9 @@ IMPORTANT: Trellix recommends testing Expert Rules in a non-production test envi
 
 ## Support
 
-For bugs related to Expert Rules, please get in touch with Trellix Field Engineering Team and raise a ticket.<br />
+For syntactical issues related to Expert Rules, please get in touch with Trellix support Team and raise a ticket.<br />
 For any other issues or feedback. Please raise an [issue](https://github.com/mcafee-enterprise/ExpertRules/issues) 
 
 ## 🤝 Contributing
 
 Thanks for taking the time to [contribute](COMMUNITY)!
-
-## Authors and acknowledgment
