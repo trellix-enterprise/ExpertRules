@@ -36,8 +36,13 @@ IMPORTANT: Trellix recommends testing Expert Rules in a non-production test envi
 
 ## Support
 
-For syntactical issues related to Expert Rules, please get in touch with Trellix support Team and raise a ticket.<br />
-For any other issues or feedback. Please raise an [issue](https://github.com/mcafee-enterprise/ExpertRules/issues) 
+For syntactical issues related to Expert Rules, please raise an [issue.](https://github.com/mcafee-enterprise/ExpertRules/issues) <br/>
+To know more on support for custom ENS rules. Refer [KB94889](https://kbm.trellix.com/corporate/index?page=content&id=KB94889)
+
+## Resources
+[Expert Rules training videos](https://kbm.trellix.com/corporate/index?page=content&id=KB89677) <br/>
+[10.7.x Product guide](https://docs.trellix.com/bundle/endpoint-security-10.7.x-product-guide-windows/page/GUID-56587D0E-F87B-4534-B81F-07EF5FBAD057.html) <br/>
+[10.6.x Product guide](https://docs.trellix.com/bundle/endpoint-security-10.6.0-threat-prevention-product-guide-windows/page/GUID-7DDC330D-DF62-4CBE-9A48-486A70F8665B.html) <br/>
 
 ## 🤝 Contributing
 
