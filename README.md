@@ -41,8 +41,8 @@ To know more on support for custom ENS rules. Refer [KB94889](https://kbm.trelli
 
 ## Resources
 [Expert Rules training videos](https://kbm.trellix.com/corporate/index?page=content&id=KB89677) <br/>
-[10.7.x Product guide](https://docs.trellix.com/bundle/endpoint-security-10.7.x-product-guide-windows/page/GUID-56587D0E-F87B-4534-B81F-07EF5FBAD057.html) <br/>
-[10.6.x Product guide](https://docs.trellix.com/bundle/endpoint-security-10.6.0-threat-prevention-product-guide-windows/page/GUID-7DDC330D-DF62-4CBE-9A48-486A70F8665B.html) <br/>
+[10.7.x Product guide – Using Expert Rules](https://docs.trellix.com/bundle/endpoint-security-10.7.x-product-guide-windows/page/GUID-56587D0E-F87B-4534-B81F-07EF5FBAD057.html) <br/>
+[10.6.x Product guide – Overview of Expert Rules](https://docs.trellix.com/bundle/endpoint-security-10.6.0-threat-prevention-product-guide-windows/page/GUID-7DDC330D-DF62-4CBE-9A48-486A70F8665B.html) <br/>
 
 ## 🤝 Contributing
 
