@@ -1,4 +1,5 @@
 # CrackMapExec - Post-Exploitation tool
+# Impacket Tool Activity
 
 ## Author
 Trellix Enterprise
@@ -32,4 +33,4 @@ OS: Windows 10 19H1 x64, Windows Server 2019, Windows 11
 ENS: 10.7.0, 10.6.1
 
 ## Notes
-NA
+This expert rule also detects IMPACKET tool activity.
