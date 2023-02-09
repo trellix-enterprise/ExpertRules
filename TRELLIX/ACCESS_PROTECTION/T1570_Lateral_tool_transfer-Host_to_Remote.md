@@ -1,7 +1,7 @@
 # T1570: Lateral tool transfer-Host to Remote
 
 ## Author
-McAfee Enterprise
+Trellix
 
 ## Description
 This expert rule detects the transfer of tools or files from a systems to a file network in a compromised environment.
@@ -11,10 +11,11 @@ Files
 
 ## Rule TCL
 ```tcl
-The original rule: 
 Rule {
- Process {
+      Process {
          Include OBJECT_NAME {-v "**"}
+         Exclude OBJECT_NAME { -v "**\\DLP\\Agent\\FCAGTE.EXE" }
+         Exclude OBJECT_NAME { -v "**\\DLP\\Agent\\fcag.exe" }
      }
 Target {
  Match FILE {
@@ -35,7 +36,6 @@ Target {
 		}
 	}
 }
-
 ```
 
 ## Tested Platforms
