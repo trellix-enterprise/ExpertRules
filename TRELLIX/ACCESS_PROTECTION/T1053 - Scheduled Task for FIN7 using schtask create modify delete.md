@@ -13,15 +13,20 @@ Processes
 ```tcl
 Rule {
     Process {
-        Include OBJECT_NAME { -v "**" }
+        Include AggregateMatch -xtype "inc1" {
+            Include OBJECT_NAME { -v "**" }
             Exclude OBJECT_NAME { -v "WSQMCONS.exe" }
             Exclude OBJECT_NAME { -v "**\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\*.exe" }
             Exclude OBJECT_NAME { -v "**\\Program Files (x86)\\Common Files\\microsoft shared\\ClickToRun\\*.exe" }
             Exclude OBJECT_NAME { -v "**\\program files\\microsoft office\\**.exe" }
             Exclude OBJECT_NAME { -v "**\\program files (x86)\\microsoft office\\**.exe" }
-Exclude OBJECT_NAME { -v "**\\Program Files\\McAfee\\**" }
+            Exclude OBJECT_NAME { -v "**\\Program Files\\McAfee\\**" }
             Exclude OBJECT_NAME { -v "**\\Program Files (x86)\\McAfee\\**" }
+         }
+        Include AggregateMatch -xtype "inc2" {
+       
             Exclude PROCESS_CMD_LINE { -v "**\\McAfee\\MAR\\scripts\\**" }
+        }
 
 }
     Target {
