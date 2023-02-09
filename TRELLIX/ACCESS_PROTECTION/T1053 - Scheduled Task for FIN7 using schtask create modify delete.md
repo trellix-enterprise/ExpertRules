@@ -20,7 +20,7 @@ Rule {
             Exclude OBJECT_NAME { -v "**\\Program Files (x86)\\Common Files\\microsoft shared\\ClickToRun\\*.exe" }
             Exclude OBJECT_NAME { -v "**\\program files\\microsoft office\\**.exe" }
             Exclude OBJECT_NAME { -v "**\\program files (x86)\\microsoft office\\**.exe" }
-			Exclude OBJECT_NAME { -v "**\\Program Files\\McAfee\\**" }
+            Exclude OBJECT_NAME { -v "**\\Program Files\\McAfee\\**" }
             Exclude OBJECT_NAME { -v "**\\Program Files (x86)\\McAfee\\**" }
          }
         Include AggregateMatch -xtype "inc2" {
