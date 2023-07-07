@@ -1,7 +1,7 @@
 # T1082 - Discovery: System Information Discovery
 
 ## Author
-McAfee Enterprise
+Trellix Enterprise
 
 ## Description
 This expert rule blocks the attempt to read information about the operating system and hardware, including version, patches, hotfixes, service packs, and architecture

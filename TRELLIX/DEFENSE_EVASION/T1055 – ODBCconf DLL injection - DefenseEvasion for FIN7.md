@@ -1,7 +1,7 @@
 # T1055 – ODBCconf DLL injection - DefenseEvasion for FIN7
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to abuse odbcconf.exe to inject a potentially malicious DLL.  

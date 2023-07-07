@@ -1,7 +1,7 @@
 # T1053 - Scheduled Task: create/modify/delete using COM Objects
 
 ## Author
-McAfee Enterprise
+Trellix Enterprise
 
 ## Description
 This expert rule prevents the abuse of  task scheduling functionality to facilitate initial or recurring execution of malicious code.

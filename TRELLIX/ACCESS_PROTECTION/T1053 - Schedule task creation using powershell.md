@@ -1,7 +1,7 @@
 # T1053: Schedule task creation using powershell
 
 ## Author
-McAfee Enterprise
+Trellix Enterprise
 
 ## Description
 This rule monitors attempt to execute malicious code from powershell using task scheduler.

@@ -1,7 +1,7 @@
 # T1570 - Lateral Tool Transfer: File Modification From A Remote System
 
 ## Author
-McAfee Enterprise
+Trellix Enterprise
 
 ## Description
 This expert rule detects the transfer of tools or files from a remote systems in a compromised environment.

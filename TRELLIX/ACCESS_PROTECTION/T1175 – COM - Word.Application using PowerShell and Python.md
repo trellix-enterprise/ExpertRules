@@ -1,7 +1,7 @@
 # T1175 – COM - Word.Application using PowerShell and Python
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to abuse the Windows Component object for code execution locally/remotely through the Word application via Python/PowerShell. 

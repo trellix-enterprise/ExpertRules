@@ -1,7 +1,7 @@
 # Detect 7zip anomalous usage
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates potential abuse of IMFEO Registry by potentially malicious applications. This is a monitoring type of rule and recommended be enabled at Report only mode.

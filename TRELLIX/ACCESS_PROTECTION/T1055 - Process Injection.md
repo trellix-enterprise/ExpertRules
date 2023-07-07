@@ -1,7 +1,7 @@
 # T1055 - Process Injection: Suspicious Process Allocated Virtual Memory
 
 ## Author
-McAfee Enterprise
+Trellix Enterprise
 
 ## Description
 This expert rule monitors virtual memory allocation by a DAC contained process.

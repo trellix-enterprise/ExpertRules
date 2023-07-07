@@ -1,7 +1,7 @@
 # T1561 - MBR protection through LBA matching criteria
 
 ## Author
-McAfee Enterprise
+Trellix Enterprise
 
 ## Description
 This expert rule detects suspicious write access of MBR partition through LBA mactching criteria. 
