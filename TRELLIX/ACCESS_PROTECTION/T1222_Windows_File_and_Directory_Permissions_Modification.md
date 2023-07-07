@@ -1,7 +1,7 @@
 # T1222.001 - Windows File and Directory Permissions Modification 
 
 ## Author
-Trellix Enterprise
+Trellix
 
 ## Description
 This rule blocks the attempt to drop files with a hardcoded folder name for achieving higher level of permissions for Windows File and Directory.

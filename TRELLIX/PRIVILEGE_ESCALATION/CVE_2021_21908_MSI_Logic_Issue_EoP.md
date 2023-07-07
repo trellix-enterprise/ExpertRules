@@ -1,7 +1,7 @@
 # CVE 2021-21908 MSI Logic Issue EoP
 
 ## Author
-McAfee Enterprise
+Trellix
 
 ## Description
 This expert rule detects and prevents Escalation of Privilege (EoP) due to abuse of Logiccal issue found in MSI installer

@@ -1,7 +1,7 @@
 # T1486 - Attempt to Encrypt data for Impact
 
 ## Author
-McAfee Enterprise
+Trellix
 
 ## Description
 This expert rule detects suspicious attempt to write into or delete files with monitored extension. 

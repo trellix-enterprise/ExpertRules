@@ -1,7 +1,7 @@
 # T1204 – Payload execution through LNK file embedded in Office document
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to create a .lnk file from a Word application.   

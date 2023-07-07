@@ -1,7 +1,7 @@
 # T1053 - Scheduled Task for FIN7 using schtask create/modify/delete
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to abuse the Task Scheduler feature for persistence and execution.  
@@ -20,12 +20,12 @@ Rule {
             Exclude OBJECT_NAME { -v "**\\Program Files (x86)\\Common Files\\microsoft shared\\ClickToRun\\*.exe" }
             Exclude OBJECT_NAME { -v "**\\program files\\microsoft office\\**.exe" }
             Exclude OBJECT_NAME { -v "**\\program files (x86)\\microsoft office\\**.exe" }
-            Exclude OBJECT_NAME { -v "**\\Program Files\\McAfee\\**" }
-            Exclude OBJECT_NAME { -v "**\\Program Files (x86)\\McAfee\\**" }
+            Exclude OBJECT_NAME { -v "**\\Program Files\\Trellix\\**" }
+            Exclude OBJECT_NAME { -v "**\\Program Files (x86)\\Trellix\\**" }
          }
         Include AggregateMatch -xtype "inc2" {
        
-            Exclude PROCESS_CMD_LINE { -v "**\\McAfee\\MAR\\scripts\\**" }
+            Exclude PROCESS_CMD_LINE { -v "**\\Trellix\\MAR\\scripts\\**" }
         }
 
 }

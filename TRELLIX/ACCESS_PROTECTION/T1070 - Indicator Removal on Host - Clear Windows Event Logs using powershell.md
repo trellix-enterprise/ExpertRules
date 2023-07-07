@@ -1,7 +1,7 @@
 # T1070 - Indicator Removal on Host: Clear Windows Event Logs using powershell
 
 ## Author
-McAfee Enterprise
+Trellix
 
 ## Description
 This expert rule detects suspicious attempt to clear Windows event logs through powershell

@@ -24,4 +24,4 @@ Rule {
 1. Open Windows Notepad.
 
 ## Notes
-As you will realize, the rule will be triggered every time. The reason why is because notepad only loads modules signed by Microsoft. And a module to be fully VTP trusted has to be also McAfee signed.
+As you will realize, the rule will be triggered every time. The reason why is because notepad only loads modules signed by Microsoft. And a module to be fully VTP trusted has to be also Trellix signed.

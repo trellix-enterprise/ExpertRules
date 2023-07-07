@@ -1,7 +1,7 @@
 # T1175 – COM - WMI using PowerShell/WMIC/MSHTA/VBScript
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to abuse the COM object using WMI via PowerShell, WMIC, MSHTA, or VBScript. 
@@ -20,7 +20,7 @@ Include OBJECT_NAME {
         -v "wscript.exe"
         -v "cscript.exe"
     }
-    Exclude PROCESS_CMD_LINE { -v "*McAfee\\MAR\\scripts\\*" }
+    Exclude PROCESS_CMD_LINE { -v "*Trellix\\MAR\\scripts\\*" }
 }
 Target {
     Match SECTION {

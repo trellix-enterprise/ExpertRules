@@ -1,7 +1,7 @@
 # T1003 – Copy SAM file using Volume Shadow Copy Service tools
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to copy the SAM file using volume shadow copy service tools. 

@@ -1,7 +1,7 @@
 # T1047 - Execute a program using WMIC
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to abuse the Windows Management Instrumentation feature for persistence. 

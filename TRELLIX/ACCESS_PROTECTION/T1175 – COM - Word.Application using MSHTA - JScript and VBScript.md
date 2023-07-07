@@ -1,7 +1,7 @@
 # T1175 – COM - Word.Application using MSHTA - JScript and VBScript
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to abuse the COM object using MSHTA via JavaScript or VBScript. 

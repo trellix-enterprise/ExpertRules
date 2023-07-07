@@ -2,7 +2,7 @@
 # Impacket Tool Activity
 
 ## Author
-Trellix Enterprise
+Trellix
 
 ## Description
 This rule blocks the abuse of built-in features/protocols like SMB to achieve its functionality. CrackMapExec (a.k.a CME) is a post-exploitation tool follows the concept of "Living off the Land" and abuses in-built features to evade most endpoint protection/IDS/IPS solutions

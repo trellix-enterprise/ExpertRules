@@ -1,7 +1,7 @@
 # T1138 - Application Shimming-Persistence using SDB File
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to abuse application shimming through SDB file creation and execution via PowerShell 

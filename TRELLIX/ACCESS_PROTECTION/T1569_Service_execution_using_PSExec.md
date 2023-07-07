@@ -1,7 +1,7 @@
 # T1569 – Service execution using PSExec
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to abuse PSExec by using named pipes to transfer standard output, input and error.  

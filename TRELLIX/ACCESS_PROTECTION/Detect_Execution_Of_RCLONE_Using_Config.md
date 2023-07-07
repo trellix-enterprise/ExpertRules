@@ -1,7 +1,7 @@
 # Detect Execution Of RCLONE.EXE Using Config
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule detects the behavior abuse of RCLONE.EXE where RCLONE.EXE is executed by calling the config file. This behavior is observed with a few ransomware actors.

@@ -1,7 +1,7 @@
 # T1552-Credential in Registry
 
 ## Author
-McAfee Enterprise
+Trellix
 
 ## Description
 This expert rule monitors access to the registry keys that hold the credentials for Putty sessions.
