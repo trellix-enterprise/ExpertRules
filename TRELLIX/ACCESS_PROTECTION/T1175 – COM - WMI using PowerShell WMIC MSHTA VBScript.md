@@ -20,7 +20,7 @@ Include OBJECT_NAME {
         -v "wscript.exe"
         -v "cscript.exe"
     }
-    Exclude PROCESS_CMD_LINE { -v "*Trellix\\MAR\\scripts\\*" }
+    Exclude PROCESS_CMD_LINE { -v "*McAfee\\MAR\\scripts\\*" }
 }
 Target {
     Match SECTION {
