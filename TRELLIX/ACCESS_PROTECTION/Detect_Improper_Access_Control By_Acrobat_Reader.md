@@ -1,7 +1,7 @@
 # Detect Improper Access Control By Acrobat Reader (CVE-2021-21045)
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to exploit an access control vulnerability that exists in some Adobe Acrobat Reader DC versions where an unauthenticated attacker could elevate privileges in the context of the current user.

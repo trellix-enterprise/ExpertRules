@@ -1,7 +1,7 @@
 # Detect Unauthorised Access Of SAM Database Files
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This expert rule detects suspicious access of SAM database files exploiting the vulnerability CVE-2021-36934, an elevation of privilege vulnerability exists because of overly permissive Access Control Lists (ACLs) on multiple system files, including the Security Accounts Manager (SAM) database. This vulnerability is also tagged as HiveNightmare and SeriousSAM.

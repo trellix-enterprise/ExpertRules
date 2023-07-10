@@ -1,7 +1,7 @@
 # T1060 - Startup Folder - Files in startup folders
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to create files in the startup folder.  

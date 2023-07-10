@@ -1,7 +1,7 @@
 # Detect 7zip anomalous usage
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates abuse of 7zip application by applications like SolarWinds.

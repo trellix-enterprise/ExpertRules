@@ -1,7 +1,7 @@
 # Detect Suspicious Usage Of VSSADMIN.EXE
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule detects deletion of volume shadow copies using vssadmin.exe process. This behavior is observed with a few ransomware actors.

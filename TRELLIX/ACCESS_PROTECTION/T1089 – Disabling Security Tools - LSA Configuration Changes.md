@@ -1,7 +1,7 @@
 # T1089 – Disabling Security Tools - LSA Configuration Changes
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to modify the Link State Advertisement (LSA) configuration, which is a pre-cursor to credential dumping. 

@@ -1,7 +1,7 @@
 # T1060 - Registry autorun of .lnk/.vbs/.vba files
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to execute programs at user logon. 

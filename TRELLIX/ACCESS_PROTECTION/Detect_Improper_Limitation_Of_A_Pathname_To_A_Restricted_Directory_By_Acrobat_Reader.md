@@ -1,7 +1,7 @@
 # Detect Improper Limitation Of A Pathname To A Restricted Directory By Acrobat Reader (CVE-2021-21037)
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to exploit a path traversal vulnerability that exists in Adobe Acrobat Reader where the victim opens a malicious file

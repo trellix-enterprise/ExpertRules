@@ -1,7 +1,7 @@
 # T1503 - Credentials from Web Browsers - Chrome/Firefox/Opera Credentials
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to access files used to store credentials in browsers. 

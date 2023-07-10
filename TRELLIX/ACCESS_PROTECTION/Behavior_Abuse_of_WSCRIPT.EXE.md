@@ -1,7 +1,7 @@
 # Behavior Abuse of WSCRIPT.EXE
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule detects the behavior abuse of WSCRIPT.EXE while executing specific script files using CMD.EXE. This is generally observed with certain variants of QBOT and Trickbot malware.

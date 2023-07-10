@@ -1,7 +1,7 @@
 # T1088 – Bypass UAC-Sysprep DLL Hijack
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to bypass user account control by hijacking system DLLs. 

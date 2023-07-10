@@ -1,7 +1,7 @@
 # Detect Improper Script Based Access of RCLONE.EXE
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule detects the script based access of RCLONE.EXE by potentially malicious actors based on command line usage. This behavior is observed with a few ransomware actors.

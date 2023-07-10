@@ -1,7 +1,7 @@
 # T1138 - Application Shimming-Persistence using SDB file - Registry Access
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to abuse application shimming through registry access. 

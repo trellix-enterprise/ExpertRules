@@ -1,7 +1,7 @@
 # Detect Suspicious Usage of BCDEDIT.EXE
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule detects suspicious usage of bcdedit.exe to disable recovery or to set specific boot status policies. This behavior is observed with a few ransomware actors.

@@ -1,7 +1,7 @@
 # Detect Deletion Of Shadow Copies Using WMIC.EXE
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule detects access or deletion of volume shadow copies using Wmic.exe process. This behavior is observed with a few ransomware actors.

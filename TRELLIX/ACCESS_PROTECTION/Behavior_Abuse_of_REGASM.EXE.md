@@ -1,7 +1,7 @@
 # Behavior Abuse of REGASM.EXE
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule detects the behavior abuse of REGASM.EXE when loading msvcrt.dll. This is generally observed with certain variants of Fareit malware.

@@ -1,7 +1,7 @@
 # PrintSpooler - Malicious DLL loaded into Fxssvc process
 
 ## Author
-Trellix Enterprise
+Trellix
 
 ## Description
 This rule blocks the attempt to load malicious DLL into Fxssvc and spoolsv process memory. 

@@ -1,7 +1,7 @@
 # T1175 – COM - WMI using PowerShell/WMIC/MSHTA/VBScript
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to abuse the COM object using WMI via PowerShell, WMIC, MSHTA, or VBScript. 

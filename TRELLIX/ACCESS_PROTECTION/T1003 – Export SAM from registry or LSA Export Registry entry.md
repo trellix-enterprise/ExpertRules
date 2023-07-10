@@ -1,7 +1,7 @@
 # T1003 – Export SAM from registry or LSA Export Registry entry
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to export SAM from the registry. 

@@ -1,7 +1,7 @@
 # Detect Potentially Malicious File access using LOLBAS technique
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This is a monitoring based rule to detect accessing of potentially malicious files using Living Of the Land Binaries and Scripts (LOLBAS) technique

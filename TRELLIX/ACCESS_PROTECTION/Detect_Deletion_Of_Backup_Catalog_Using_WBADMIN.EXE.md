@@ -1,7 +1,7 @@
 # Detect Deletion Of Backup Catalog Using WBADMIN.EXE
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule detects deletion of backup catalog that is stored on the local computer by wbadmin.exe process. This behavior is observed with a few ransomware actors.

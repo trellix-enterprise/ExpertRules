@@ -1,7 +1,7 @@
 # T1140 - Certutil.exe - Deobfuscate/Decode Files or Information
 
 ## Author
-Trellix Enterprise
+Trellix
 
 ## Description
 This rule blocks the attempt to decode the remote access tool portable executable file that has been hidden inside certificate using certutil.exe utility.

@@ -1,7 +1,7 @@
 # T1053 - Scheduled Task for FIN7 using schtask create/modify/delete
 
 ## Author
-McAfee
+Trellix
 
 ## Description
 This rule trigger indicates an attempt to abuse the Task Scheduler feature for persistence and execution.  
