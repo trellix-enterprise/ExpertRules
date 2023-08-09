@@ -1,4 +1,4 @@
-# Detect Suspecious Lsass Process Dump
+# Detect Suspicious Lsass Process Dump
 
 ## Author
 Trellix
