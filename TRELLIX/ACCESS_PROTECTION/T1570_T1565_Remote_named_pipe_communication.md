@@ -1,4 +1,4 @@
-# T1570 - Remote Named Pipe Connection
+# T1570/T1565 - Remote Named Pipe Connection
 
 ## Author
 Trellix
