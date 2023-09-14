@@ -1,4 +1,4 @@
-# T1565 - Remote Named Pipe Connection
+# T1570 - Remote Named Pipe Connection
 
 ## Author
 Trellix
@@ -21,7 +21,7 @@ Rule {
 
         Match FILE {
 
-           	        Include OBJECT_NAME {-v **pipe\\**}
+			Include OBJECT_NAME {-v **pipe\\**}
 			Exclude OBJECT_NAME {-v **pipe\\lsass}
 			Exclude OBJECT_NAME {-v **pipe\\ntapvsrq}
 			Exclude OBJECT_NAME {-v **pipe\\srvsvc}
