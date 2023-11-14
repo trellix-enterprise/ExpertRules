@@ -1,4 +1,4 @@
-# CVE-2023-36394 : Arbitrary File Creation due to Improper Processing of Symlinks
+# xxxxxxxxxx : Arbitrary File Creation due to Improper Processing of Symlinks
 
 ## Author
 Trellix EP Content
