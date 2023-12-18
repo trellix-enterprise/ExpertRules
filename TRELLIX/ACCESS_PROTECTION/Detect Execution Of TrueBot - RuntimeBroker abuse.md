@@ -4,7 +4,7 @@
 Trellix
 
 ## Description
-This rule detects the behavior of the execution of RuntimeBroker having certificate other than Microsoft.
+This rule detects execution of unsigned RuntimeBroker process instance.
 
 ## Rule Class 
 Files
