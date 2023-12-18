@@ -11,7 +11,7 @@ Files
 
 ## Rule TCL
 ```tcl
-The original rule: 
+ 
 Rule {
 	Process {
 			Include OBJECT_NAME { -v "**" }             
