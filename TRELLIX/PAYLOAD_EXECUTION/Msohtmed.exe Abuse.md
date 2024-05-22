@@ -15,7 +15,7 @@ Rule {
       Target {
             Match PROCESS {
                Include OBJECT_NAME { -v "**\\MSOHTMED.EXE" }
-			    Exclude PROCESS_CMD_LINE { -v "*http://*.html" }
+                Exclude PROCESS_CMD_LINE { -v "*http://*.html" }
                 Exclude PROCESS_CMD_LINE { -v "*http://*.htm" }
                 Exclude PROCESS_CMD_LINE { -v "*https://*.html" }
                 Exclude PROCESS_CMD_LINE { -v "*https://*.htm" }
