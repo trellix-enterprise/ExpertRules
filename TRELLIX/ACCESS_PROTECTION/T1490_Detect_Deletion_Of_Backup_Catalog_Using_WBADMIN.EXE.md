@@ -1,4 +1,4 @@
-# Detect Deletion Of Backup Catalog Using WBADMIN.EXE
+# T1490: Detect Deletion Of Backup Catalog Using WBADMIN.EXE
 
 ## Author
 Trellix
@@ -7,7 +7,7 @@ Trellix
 This rule detects deletion of backup catalog that is stored on the local computer by wbadmin.exe process. This behavior is observed with a few ransomware actors.
 
 ## Rule Class 
-Processes
+Process
 
 ## Rule TCL
 ```tcl
