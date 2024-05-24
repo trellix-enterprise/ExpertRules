@@ -1,4 +1,4 @@
-# Detect Suspicious Usage of BCDEDIT.EXE
+# T1490: Detect Suspicious Usage of BCDEDIT.EXE
 
 ## Author
 Trellix
@@ -7,7 +7,7 @@ Trellix
 This rule detects suspicious usage of bcdedit.exe to disable recovery or to set specific boot status policies. This behavior is observed with a few ransomware actors.
 
 ## Rule Class 
-Processes
+Process
 
 ## Rule TCL
 ```tcl
