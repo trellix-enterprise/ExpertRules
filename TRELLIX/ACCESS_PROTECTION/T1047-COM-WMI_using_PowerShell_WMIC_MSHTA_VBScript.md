@@ -1,4 +1,4 @@
-# T1175 – COM - WMI using PowerShell/WMIC/MSHTA/VBScript
+# T1047 – COM - WMI using PowerShell/WMIC/MSHTA/VBScript
 
 ## Author
 Trellix
@@ -7,7 +7,7 @@ Trellix
 This rule trigger indicates an attempt to abuse the COM object using WMI via PowerShell, WMIC, MSHTA, or VBScript. 
 
 ## Rule Class 
-Processes
+Process
 
 ## Rule TCL
 ```tcl
@@ -15,7 +15,7 @@ Rule {
 Process {
 Include OBJECT_NAME {
         -v "powershell.exe"
-                    -v "powershell_ise.exe"
+        -v "powershell_ise.exe"
         -v "mshta.exe"
         -v "wscript.exe"
         -v "cscript.exe"
