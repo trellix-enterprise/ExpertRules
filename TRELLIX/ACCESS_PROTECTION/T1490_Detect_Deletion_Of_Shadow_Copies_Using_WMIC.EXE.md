@@ -1,4 +1,4 @@
-# Detect Deletion Of Shadow Copies Using WMIC.EXE
+# T1490 : Detect Deletion Of Shadow Copies Using WMIC.EXE
 
 ## Author
 Trellix
@@ -7,7 +7,7 @@ Trellix
 This rule detects access or deletion of volume shadow copies using Wmic.exe process. This behavior is observed with a few ransomware actors.
 
 ## Rule Class 
-Processes
+Process
 
 ## Rule TCL
 ```tcl
