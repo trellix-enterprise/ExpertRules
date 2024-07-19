@@ -40,9 +40,7 @@ Rule {
 	}
 }
 
-
 ```
-
 ## Tested Platforms
 OS: Windows 10 20H1 x86, Windows 10 20H2 x64
 ENS: 10.7.0
