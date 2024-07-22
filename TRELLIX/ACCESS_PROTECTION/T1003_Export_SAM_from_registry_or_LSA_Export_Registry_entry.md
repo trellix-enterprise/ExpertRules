@@ -37,12 +37,12 @@ Rule {
       }
       Target {
           Match KEY {
-Include OBJECT_NAME { -v "HKLM\\SAM" }
-Include OBJECT_NAME { -v "HKLM\\SAM\\Domain\\Account" }
-Include OBJECT_NAME { -v "HKLM\\SECURITY\\Policy\\Secrets"}
-Include -access "READ"
-}
-}
+		Include OBJECT_NAME { -v "HKLM\\SAM" }
+		Include OBJECT_NAME { -v "HKLM\\SAM\\Domain\\Account" }
+		Include OBJECT_NAME { -v "HKLM\\SECURITY\\Policy\\Secrets"}
+		Include -access "READ"
+		}
+	}
 }
 ```
 
@@ -55,3 +55,4 @@ ENS: 10.7.0 November'20 update
 
 ## Notes
 This rule is for monitoring/telemetry. Customers are advised to fine-tune the rules to the applications used in their environment or disable the signature if there are false positives.
+Enabling this rule might result in performance implication in the customer environment.
