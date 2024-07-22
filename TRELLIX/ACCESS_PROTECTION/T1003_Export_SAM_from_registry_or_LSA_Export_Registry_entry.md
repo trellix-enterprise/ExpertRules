@@ -54,4 +54,5 @@ OS: Windows 10 20H1 x64 and x86
 ENS: 10.7.0 November'20 update
 
 ## Notes
-This rule is for monitoring/telemetry. Customers are advised to fine-tune the rules to the applications used in their environment or disable the signature if there are false positives.Enabling this rule might result in performance implication in the customer environment.
+This rule is for monitoring/telemetry. Customers are advised to fine-tune the rules to the applications used in their environment or disable the signature if there are false positives.
+Enabling this rule might result in performance implication in the customer environment.

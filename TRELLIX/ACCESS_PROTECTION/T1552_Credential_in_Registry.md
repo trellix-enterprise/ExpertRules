@@ -46,4 +46,5 @@ OS: Windows 10 20H2 x64
 ENS: 10.7.0
 
 ## Notes
-This rule is for monitoring/telemetry and is performance intensive. Customers are advised to fine-tune the rules to the applications used in their environment or disable the signature if there are false positives.Enabling this rule might result in performance implication in the customer environment.
+This rule is for monitoring/telemetry and is performance intensive. Customers are advised to fine-tune the rules to the applications used in their environment or disable the signature if there are false positives.
+Enabling this rule might result in performance implication in the customer environment.
