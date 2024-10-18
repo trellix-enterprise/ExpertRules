@@ -4,7 +4,7 @@
 Trellix
 
 ## Description
-This Expert rule detects Enumerate the Domain and collect information in a text file.
+This Expert rule detects Enumeration of Active Directory Infrastructure.
 
 ## Rule Class 
 Process

@@ -1,4 +1,4 @@
-# T1048.003 Exfiltrate the zip file using curl
+# T1048 Exfiltrate the zip file using curl
 
 ## Author
 Trellix

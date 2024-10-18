@@ -4,7 +4,7 @@
 Trellix
 
 ## Description
-This Expert rule detects creation or modification of regitry keys.
+This Expert rule detects creation or modification of ZoneMap registry keys.
 
 ## Rule Class 
 Registry
