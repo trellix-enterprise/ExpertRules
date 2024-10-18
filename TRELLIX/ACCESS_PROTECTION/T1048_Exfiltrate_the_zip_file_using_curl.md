@@ -35,4 +35,4 @@ Rule {
 OS: Win 11, Win 20H1x86 
 
 ## Notes
-NA
+Customers are advised to fine-tune the rule in their environment or disable the signature if there are false positives.

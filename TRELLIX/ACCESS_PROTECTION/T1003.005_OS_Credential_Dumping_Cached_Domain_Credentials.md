@@ -28,4 +28,4 @@ Rule {
 NA
 
 ## Notes
-NA
+Customers are advised to fine-tune the rule in their environment or disable the signature if there are false positives.

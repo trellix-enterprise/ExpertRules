@@ -345,4 +345,4 @@ Rule {
 Win 1019H1x64, ENS 10.7.0
 
 ## Notes
-NA
+Customers are advised to fine-tune the rule in their environment or disable the signature if there are false positives.

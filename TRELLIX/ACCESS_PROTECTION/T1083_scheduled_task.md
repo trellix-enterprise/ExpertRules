@@ -48,4 +48,4 @@ Rule {
 Win 11x64 and Win server 2022
 
 ## Notes
-NA
+Customers are advised to fine-tune the rule in their environment or disable the signature if there are false positives.

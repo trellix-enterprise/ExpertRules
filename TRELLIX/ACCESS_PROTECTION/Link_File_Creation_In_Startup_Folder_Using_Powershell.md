@@ -32,4 +32,4 @@ Rule {
 Win 11x64
 
 ## Notes
-NA
+Customers are advised to fine-tune the rule in their environment or disable the signature if there are false positives.
