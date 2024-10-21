@@ -1,4 +1,4 @@
-# Link File Creation In Startup Folder using Powershell
+# Link file creation by a script file
 
 ## Author
 Trellix

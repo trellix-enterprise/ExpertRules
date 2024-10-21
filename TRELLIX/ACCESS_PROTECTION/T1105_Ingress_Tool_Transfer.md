@@ -4,7 +4,7 @@
 Trellix
 
 ## Description
-This Expert rule detects when Adversaries may transfer tools or other files from an external system into a compromised environment.
+This Expert rule detects an Adversaries may transfer tools or other files from an external system into a compromised environment.
 
 ## Rule Class 
 Process

@@ -4,7 +4,7 @@
 Trellix
 
 ## Description
-This Expert rule detects when user try to check Windows system utilities and commands used to look for network configurations
+This Expert rule detects user trying to check Windows system utilities and commands used to look for network configurations.
 
 ## Rule Class 
 Process

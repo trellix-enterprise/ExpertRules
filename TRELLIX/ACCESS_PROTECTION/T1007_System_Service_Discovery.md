@@ -4,7 +4,7 @@
 Trellix
 
 ## Description
-This Expert rule detects when user Gather windows running services information using system commands and windows API based payloads
+This Expert rule detects user gathering windows running services information using system commands and windows API based payloads
 
 ## Rule Class 
 Process
