@@ -1,10 +1,10 @@
-# T1069 System Network Configuration Discovery
+# T1069 Permission Groups Discovery
 
 ## Author
 Trellix
 
 ## Description
-This Expert rule detects user trying to check Windows system utilities and commands used to look for network configurations.
+This Expert rule detects Adversaries may attempt to discover group and permission settings.
 
 ## Rule Class 
 Process

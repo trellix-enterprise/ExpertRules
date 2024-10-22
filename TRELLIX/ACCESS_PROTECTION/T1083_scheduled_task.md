@@ -4,7 +4,7 @@
 Trellix
 
 ## Description
-This Expert rule detects a user is trying to scheduled tasks from cmd.exe.
+This Expert rule detects scheduled tasks creation.
 
 ## Rule Class 
 Process

@@ -4,7 +4,7 @@
 Trellix
 
 ## Description
-This Expert rule detects creation of delete or remove built-in data and turn off services designed to aid in the recovery of a corrupted system to prevent recovery.
+This Expert rule detects attempt to inhibit system recovery using VSSADMIN.
 
 ## Rule Class 
 Process
