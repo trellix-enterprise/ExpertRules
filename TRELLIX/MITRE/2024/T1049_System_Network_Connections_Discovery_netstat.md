@@ -1,4 +1,4 @@
-# T1049 System Network Connections Discovery usig netstat.
+# T1049 System Network Connections Discovery using netstat.
 
 ## Author
 Trellix
