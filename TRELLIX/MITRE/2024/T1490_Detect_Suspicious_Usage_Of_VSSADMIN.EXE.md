@@ -11,17 +11,17 @@ Processes
 
 ## Rule TCL
 ```tcl
-The original rule: 
+
 Rule {
 	Target {
 		Match PROCESS {
 			Include OBJECT_NAME { -v "vssadmin.exe" }
 			Include PROCESS_CMD_LINE { -v "* delete shadows * /all * /quiet *" }
                         Include PROCESS_CMD_LINE { -v "* delete shadows * /all /quiet" }
-                        Include PROCESS_CMD_LINE { -v "* delete shadows /all /quiet" }
+                        Include PROCESS_CMD_LINE { -v "* delete shadows /all /quiet**" }
                         Include PROCESS_CMD_LINE { -v "* delete shadows * /quiet /all" }
                         Include PROCESS_CMD_LINE { -v "* delete shadows * /quiet * /all *" }
-                        Include PROCESS_CMD_LINE { -v "* delete shadows /quiet /all" }
+                        Include PROCESS_CMD_LINE { -v "* delete shadows /quiet /all**" }
 			Include -access "CREATE"
 		}
 	}
