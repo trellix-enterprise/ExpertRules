@@ -4,7 +4,7 @@
 Elad levi
 
 ## Description
-This Expert rule detects allocation of memory in remote process and image load right after that, which indicates PE injection.
+This detection signature identifies potential process injection attempts by monitoring the creation of memory sections with Read-Write-Execute (RWX) permissions, which is often used to load and execute malicious code within another process's memory space.
 
 ## Rule Class 
 Process
@@ -12,27 +12,31 @@ Process
 ## Rule TCL
 ```tcl
 Rule {
-	Process {
-		# Exclude processes signed by Trellix or Microsoft
-		Exclude VTP_TRUST true
+	Initiator {
+		Match PROCESS {
+			Include OBJECT_NAME {
+				-v **
+			}
+			# Exclude processes signed by a Trellix or Microsoft
+			Exclude VTP_TRUST true
+		}
 	}
 	Target {
 		Match PROCESS {
 			Include OBJECT_NAME {
 				-v **
 			}
-			# PAGE_READWRITE memory protection
-			Include -nt_access "0x04"
-		}
-		Next_Process_Behavior {
-			Target {
-				Match SECTION {
-					Include OBJECT_NAME {
-						-v **
-					}
-					# Notification only (cannot block the image load)
-					Include -access "LOAD_IMAGE"
-				}
+			Include -access "WRITE"
+			Exclude -access "DELETE"
+			# Exclude every memory protection execpt PAGE_EXECUTE_READWRITE (0x40)
+			Include NT_ACCESS_MASK {
+				-v "!0x10"
+				-v "!0x20"
+				-v "!0x80"
+				-v "!0x01"
+				-v "!0x02"
+				-v "!0x04"
+				-v "!0x08"
 			}
 		}
 	}
