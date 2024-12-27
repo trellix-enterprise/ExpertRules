@@ -1,4 +1,4 @@
-# T1055.002 - PE Injection
+# T1055 - Process Injection via RWX Memory Allocation
 
 ## Author
 Elad levi
