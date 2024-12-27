@@ -1,0 +1,47 @@
+# T1055.002 - PE Injection
+
+## Author
+Elad levi
+
+## Description
+This Expert rule detects allocation of memory in remote process and image load right after that, which indicates PE injection.
+
+## Rule Class 
+Process
+
+## Rule TCL
+```tcl
+Rule {
+	Process {
+		# Exclude processes signed by a Trellix or Microsoft
+		Exclude VTP_TRUST true
+	}
+	Target {
+		Match PROCESS {
+			Include OBJECT_NAME {
+				-v **
+			}
+			# PAGE_READWRITE memory protection
+			Include -nt_access "0x04"
+		}
+		Next_Process_Behavior {
+			Target {
+				Match SECTION {
+					Include OBJECT_NAME {
+						-v **
+					}
+					# Notification only (cannot block the image load)
+					Include -access "LOAD_IMAGE"
+				}
+			}
+		}
+	}
+}
+```
+
+## Tested Platforms
+NA
+
+## Notes
+- Customers are advised to fine-tune the rule in their environment or disable the signature if there are false positives.
+- Because I've used the access mask LOAD_IMAGE the signature cannot be used for prevention
