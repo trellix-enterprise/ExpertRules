@@ -48,7 +48,6 @@ NA
 
 ## Notes
 - Customers are advised to fine-tune the rule in their environment or disable the signature if there are false positives.
-- Because I've used the access mask LOAD_IMAGE the signature cannot be used for prevention
 
 ## References
 - [MSDN - Memory Protection Constants](https://learn.microsoft.com/en-us/windows/win32/memory/memory-protection-constants)
