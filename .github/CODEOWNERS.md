@@ -1,4 +1,4 @@
-# McAfee Open Source documentation owners
+# Trellix Open Source documentation owners
 
 *       @MohanaShyamP
 *       @sreedharr26
