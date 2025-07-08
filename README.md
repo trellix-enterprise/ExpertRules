@@ -22,7 +22,7 @@ IMPORTANT: Trellix recommends testing Expert Rules in a non-production test envi
 3. Click on `Endpoint Security Threat Prevention` Product and select `Exploit Prevention`
 4. Click on `Edit` button corresponding to policy you want to update
 
-![image](https://user-images.githubusercontent.com/89252889/184321097-eaaa7e72-9732-4b1c-9016-7f406d25bf8f.png)
+![image](https://github.com/user-attachments/assets/c1b9beb9-fa11-46df-931d-d87567565ef6)
 
 5. Click on `Show Advanced` button to view advanced settings for Exploit Prevention
 6. Go to `Signatures` section and click on `Add Expert Rule` button
