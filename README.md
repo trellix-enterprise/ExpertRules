@@ -17,7 +17,7 @@ IMPORTANT: Trellix recommends testing Expert Rules in a non-production test envi
 1. Log on to EPO Console using your credentials
 2. Go to `Policy Catalog` page from the menu
 
-![image](https://user-images.githubusercontent.com/89252889/184320753-cd0be6cc-5ec6-428e-8a9f-75243933dcb0.png)
+![image](https://github.com/user-attachments/assets/08a7a393-11b5-4b88-b320-1cb1ffba473c)
 
 3. Click on `Endpoint Security Threat Prevention` Product and select `Exploit Prevention`
 4. Click on `Edit` button corresponding to policy you want to update
@@ -36,8 +36,8 @@ IMPORTANT: Trellix recommends testing Expert Rules in a non-production test envi
 
 ## Support
 
-For syntactical issues related to Expert Rules, please raise an [issue.](https://github.com/mcafee-enterprise/ExpertRules/issues) <br/>
-To know more on support for custom ENS rules. Refer [KB94889](https://kbm.trellix.com/corporate/index?page=content&id=KB94889)
+For syntactical issues related to Expert Rules, please raise an [issue.](https://github.com/trellix-enterprise/ExpertRules/issues) <br/>
+To know more on support for custom ENS rules. Refer [KB94889](https://thrive.trellix.com/s/article/KB94889)
 
 ## Resources
 [Expert Rules training videos](https://kbm.trellix.com/corporate/index?page=content&id=KB89677) <br/>
