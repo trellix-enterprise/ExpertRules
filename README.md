@@ -17,7 +17,7 @@ IMPORTANT: Trellix recommends testing Expert Rules in a non-production test envi
 1. Log on to EPO Console using your credentials
 2. Go to `Policy Catalog` page from the menu
 
-![image](https://github.com/user-attachments/assets/298f5926-eacb-4db6-864f-25dd82e7f62e)
+![image](https://github.com/user-attachments/assets/57538a04-d9c5-4d84-8980-20cbb03106e1)
 
 3. Click on `Endpoint Security Threat Prevention` Product and select `Exploit Prevention`
 4. Click on `Edit` button corresponding to policy you want to update
