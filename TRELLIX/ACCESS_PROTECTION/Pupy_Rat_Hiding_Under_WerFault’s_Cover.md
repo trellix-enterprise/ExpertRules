@@ -20,7 +20,7 @@ Rule {
 	Target {
 		Match FILE {
 			Include OBJECT_NAME { -v "faultrep.dll" }
-                        Exclude OBJECT_NAME { -v "**\\windows\\system32\\faultrep.dll" }
+                        Exclude OBJECT_NAME { -v "%windir%\\system32\\faultrep.dll" }
                         Include -access "CREATE READ"
 
 		}

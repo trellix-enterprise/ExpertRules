@@ -16,13 +16,13 @@ Rule {
         Include AggregateMatch -xtype "inc1" {
             Include OBJECT_NAME { -v "**" }
             Exclude OBJECT_NAME { -v "WSQMCONS.exe" }
-            Exclude OBJECT_NAME { -v "**\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\*.exe" }
-            Exclude OBJECT_NAME { -v "**\\Program Files (x86)\\Common Files\\microsoft shared\\ClickToRun\\*.exe" }
-            Exclude OBJECT_NAME { -v "**\\program files\\microsoft office\\**.exe" }
-            Exclude OBJECT_NAME { -v "**\\program files (x86)\\microsoft office\\**.exe" }
-            Exclude OBJECT_NAME { -v "**\\Program Files\\McAfee\\**" }
-            Exclude OBJECT_NAME { -v "**\\Program Files (x86)\\McAfee\\**" }
-            Exclude OBJECT_NAME { -v "**\\Program Files (x86)\\FireEye\\xagt\\xagt.exe" }
+            Exclude OBJECT_NAME { -v "%programfiles%\\Common Files\\microsoft shared\\ClickToRun\\*.exe" }
+            Exclude OBJECT_NAME { -v "%programfiles(x86)%\\Common Files\\microsoft shared\\ClickToRun\\*.exe" }
+            Exclude OBJECT_NAME { -v "%programfiles%\\microsoft office\\**.exe" }
+            Exclude OBJECT_NAME { -v "%programfiles(x86)%\\microsoft office\\**.exe" }
+            Exclude OBJECT_NAME { -v "%programfiles%\\McAfee\\**" }
+            Exclude OBJECT_NAME { -v "%programfiles(x86)%\\McAfee\\**" }
+            Exclude OBJECT_NAME { -v "%programfiles(x86)%\\FireEye\\xagt\\xagt.exe" }
          }
         Include AggregateMatch -xtype "inc2" {
        
