@@ -1,10 +1,10 @@
-# EDR Freez Werfault.exe
+# EDR Freez WerFaultSecure.exe
 
 ## Author
 Trellix
 
 ## Description
-The expert rule detects werfault.exe excuting commandlines side by side.
+The expert rule detects werFaultSecure.exe excuting commandlines side by side.
 
 ## Rule Class 
 Process
