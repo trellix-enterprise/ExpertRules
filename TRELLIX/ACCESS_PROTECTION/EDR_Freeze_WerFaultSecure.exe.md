@@ -4,7 +4,7 @@
 Trellix
 
 ## Description
-The expert rule detects werFaultSecure.exe excuting commandlines side by side.
+The expert rule detects werFaultSecure.exe execute commandlines side by side.
 
 ## Rule Class 
 Process
