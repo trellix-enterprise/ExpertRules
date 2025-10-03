@@ -1,4 +1,4 @@
-# EDR Freez WerFaultSecure.exe
+# EDR Freeze WerFaultSecure.exe
 
 ## Author
 Trellix
