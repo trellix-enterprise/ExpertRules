@@ -14,8 +14,8 @@ Files
 Rule {
       Process {
          Include OBJECT_NAME {-v "**"}
-         Exclude OBJECT_NAME { -v "**\\DLP\\Agent\\FCAGTE.EXE" }
-         Exclude OBJECT_NAME { -v "**\\DLP\\Agent\\fcag.exe" }
+         Exclude OBJECT_NAME { -v "%programfiles%\\McAfee\\DLP\\Agent\\FCAGTE.EXE" }
+         Exclude OBJECT_NAME { -v "%programfiles%\\McAfee\\DLP\\Agent\\fcag.exe" }
      }
 Target {
  Match FILE {

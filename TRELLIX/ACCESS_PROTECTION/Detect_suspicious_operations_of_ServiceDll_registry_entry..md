@@ -13,8 +13,8 @@
  ```tcl
 Rule {
 	Process {
-			Exclude OBJECT_NAME {-v "**\\Windows\\System32\\svchost.exe"}
-			Exclude OBJECT_NAME {-v "**\\Windows\\system32\\services.exe"}
+			Exclude OBJECT_NAME {-v "%windir%\\System32\\svchost.exe"}
+			Exclude OBJECT_NAME {-v "%windir%\\system32\\services.exe"}
 		}
 
     Target {
