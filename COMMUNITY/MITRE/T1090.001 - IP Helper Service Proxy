@@ -1,0 +1,37 @@
+# T1090.001 - IP Helper Service Proxy
+
+## Author
+Elad levi
+
+## Description
+Detects write operations to Windows PortProxy registry keys, which indicates creation or modification of port-forwarding rules used for internal proxying or lateral movement.
+
+## Rule Class 
+Registry
+
+```tcl
+Rule {
+    Process {
+        Include OBJECT_NAME {
+            -v "*"
+        }
+    }
+    Target {
+        Match KEY {
+            Include OBJECT_NAME {
+                -v "HKLM\\SYSTEM\\CurrentControlSet\\Services\\PortProxy\\**"
+            }
+            Include -access "WRITE"
+        }
+    }
+}
+```
+
+## Tested Platforms
+NA
+
+## Notes
+- Customers are advised to fine-tune the rule in their environment or disable the signature if there are false positives.
+
+## References
+https://attack.mitre.org/techniques/T1090/001/
