@@ -17,12 +17,12 @@ IMPORTANT: Trellix recommends testing Expert Rules in a non-production test envi
 1. Log on to EPO Console using your credentials
 2. Go to `Policy Catalog` page from the menu
 
-![image](https://user-images.githubusercontent.com/89252889/184320753-cd0be6cc-5ec6-428e-8a9f-75243933dcb0.png)
+![image](https://github.com/user-attachments/assets/57538a04-d9c5-4d84-8980-20cbb03106e1)
 
 3. Click on `Endpoint Security Threat Prevention` Product and select `Exploit Prevention`
 4. Click on `Edit` button corresponding to policy you want to update
 
-![image](https://user-images.githubusercontent.com/89252889/184321097-eaaa7e72-9732-4b1c-9016-7f406d25bf8f.png)
+![image](https://github.com/user-attachments/assets/c1b9beb9-fa11-46df-931d-d87567565ef6)
 
 5. Click on `Show Advanced` button to view advanced settings for Exploit Prevention
 6. Go to `Signatures` section and click on `Add Expert Rule` button
@@ -36,13 +36,12 @@ IMPORTANT: Trellix recommends testing Expert Rules in a non-production test envi
 
 ## Support
 
-For syntactical issues related to Expert Rules, please raise an [issue.](https://github.com/mcafee-enterprise/ExpertRules/issues) <br/>
-To know more on support for custom ENS rules. Refer [KB94889](https://kbm.trellix.com/corporate/index?page=content&id=KB94889)
+For syntactical issues related to Expert Rules, please raise an [issue.](https://github.com/trellix-enterprise/ExpertRules/issues) <br/>
+To know more on support for custom ENS rules. Refer [KB94889](https://thrive.trellix.com/s/article/KB94889)
 
 ## Resources
-[Expert Rules training videos](https://kbm.trellix.com/corporate/index?page=content&id=KB89677) <br/>
-[10.7.x Product guide – Using Expert Rules](https://docs.trellix.com/bundle/endpoint-security-10.7.x-product-guide-windows/page/GUID-56587D0E-F87B-4534-B81F-07EF5FBAD057.html) <br/>
-[10.6.x Product guide – Overview of Expert Rules](https://docs.trellix.com/bundle/endpoint-security-10.6.0-threat-prevention-product-guide-windows/page/GUID-7DDC330D-DF62-4CBE-9A48-486A70F8665B.html) <br/>
+[Expert Rules training](https://training-catalog.trellix.com/Course/148256/elearning-detection-and-prevention-with-ens-expert-rules-essentials) <br/>
+[10.7.x Product guide – Using Expert Rules](https://docs.trellix.com/bundle/endpoint-security-10.7.x-product-guide-windows/page/UUID-d11e2e43-4e3e-ce8d-299e-63d86b0ab48f.html) <br/>
 
 ## 🤝 Contributing
 

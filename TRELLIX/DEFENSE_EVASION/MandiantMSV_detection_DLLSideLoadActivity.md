@@ -18,7 +18,7 @@ Rule {
 	Target {
 		Match FILE {
 			Include OBJECT_NAME { -v "fxsst.dll" }
-			Exclude OBJECT_NAME { -v "**\\Windows\\System32\\fxsst.dll" }
+			Exclude OBJECT_NAME { -v "%windir%\\System32\\fxsst.dll" }
 			Include -access "EXECUTE"
 		}
 	}
