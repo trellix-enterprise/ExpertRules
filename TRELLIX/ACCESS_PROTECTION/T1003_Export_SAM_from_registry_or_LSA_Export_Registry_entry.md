@@ -29,10 +29,10 @@ Rule {
             Exclude OBJECT_NAME { -v "SCHTASKS.EXE" }
             Exclude OBJECT_NAME { -v "REGEDIT.EXE" }
             Exclude OBJECT_NAME { -v "UpdateNotificationMgr.exe" }
-            Exclude OBJECT_NAME { -v "**\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\*.exe" }
-            Exclude OBJECT_NAME { -v "**\\Program Files (x86)\\Common Files\\microsoft shared\\ClickToRun\\*.exe" }
-            Exclude OBJECT_NAME { -v "**\\program files\\microsoft office\\**.exe" }
-            Exclude OBJECT_NAME { -v "**\\program files (x86)\\microsoft office\\**.exe" }
+            Exclude OBJECT_NAME { -v "%programfiles%\\Common Files\\microsoft shared\\ClickToRun\\*.exe" }
+            Exclude OBJECT_NAME { -v "%programfiles(x86)%\\Common Files\\microsoft shared\\ClickToRun\\*.exe" }
+            Exclude OBJECT_NAME { -v "%programfiles%\\microsoft office\\**.exe" }
+            Exclude OBJECT_NAME { -v "%programfiles(x86)%\\microsoft office\\**.exe" }
             }
       }
       Target {
