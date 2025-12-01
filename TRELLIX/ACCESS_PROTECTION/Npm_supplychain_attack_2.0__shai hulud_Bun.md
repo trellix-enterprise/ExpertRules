@@ -26,7 +26,6 @@ Rule {
 		}
 }
 
-```
 
 ## Tested Platforms
 OS: Windows 10 20H2 x64
