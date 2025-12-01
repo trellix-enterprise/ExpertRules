@@ -1,4 +1,4 @@
-# Npm aupplychain attack 2.0 shai hulud Bun.exe
+# Npm supplychain attack 2.0 shai hulud Bun.exe
 
 
 ## Author

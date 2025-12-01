@@ -1,4 +1,4 @@
-# Npm aupplychain attack 2.0 shai hulud Powershell.exe
+# Npm Supplychain attack 2.0 shai hulud Powershell.exe
 
 
 ## Author
