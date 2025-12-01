@@ -19,9 +19,9 @@ Rule {
 	  }
 	  Target {
 			Match PROCESS {
-			       	   Include OBJECT_NAME { -v "powershell.exe" }
-				   Include PROCESS_CMD_LINE { -v "**bun.sh/install.ps1**" }
-				   Include -access "CREATE"
+			       	 	Include OBJECT_NAME { -v "powershell.exe" }
+				  	Include PROCESS_CMD_LINE { -v "**bun.sh/install.ps1**" }
+				  	Include -access "CREATE"
 			}
 		}
 }
