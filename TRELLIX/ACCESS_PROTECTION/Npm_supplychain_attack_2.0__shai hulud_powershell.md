@@ -1,11 +1,11 @@
-# Npm Supplychain attack 2.0 shai hulud Powershell.exe
+# Npm supplychain attack 2.0 shai hulud Powershell.exe
 
 
 ## Author
 Trellix
 
 ## Description
-The rule is to detect the creation of new processes initiated by PowerShell during the execution of the Bun installation script.
+The rule is to detects the creation of new processes initiated by PowerShell during the execution of the Bun installation script.
 
 ## Rule Class 
 Process
@@ -19,7 +19,7 @@ Rule {
 	  }
 	  Target {
 			Match PROCESS {
-			           Include OBJECT_NAME { -v "powershell.exe" }
+			       Include OBJECT_NAME { -v "powershell.exe" }
 				   Include PROCESS_CMD_LINE { -v "**bun.sh/install.ps1**"}
 				   Include -access "CREATE"
 			}
