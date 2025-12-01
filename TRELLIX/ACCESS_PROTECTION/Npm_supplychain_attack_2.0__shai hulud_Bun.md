@@ -25,6 +25,7 @@ Rule {
 			}
 		}
 }
+```
 
 
 ## Tested Platforms
