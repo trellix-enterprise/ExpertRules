@@ -19,7 +19,7 @@ Rule {
         Match PROCESS {
             	Include OBJECT_NAME { -v "node.exe" }
             	Include PROCESS_CMD_LINE { -v "**\\.claude\\setup.mjs*" }
-		Include PROCESS_CMD_LINE { -v "**\\.vscode\\setup.mjs*" }
+		        Include PROCESS_CMD_LINE { -v "**\\.vscode\\setup.mjs*" }
             	Include -access "CREATE"
         }
     }

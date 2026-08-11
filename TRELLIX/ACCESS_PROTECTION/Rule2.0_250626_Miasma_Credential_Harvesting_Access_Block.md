@@ -13,16 +13,16 @@ File
 ```tcl
 Rule {
     Process {
-        	Include OBJECT_NAME { -v "node.exe" }
+        Include OBJECT_NAME { -v "node.exe" }
 		Include OBJECT_NAME { -v "bun.exe" }
     }
     Target {
         Match FILE {
-            		Include OBJECT_NAME { -v "**\\Users\\*\\.aws\\credentials" }
-			Include OBJECT_NAME { -v "**\Users\\*\\AppData\\Roaming\\GitHub CLI\\hosts.yml" }
-			Include OBJECT_NAME { -v "**\\Users\\*\\.npmrc" }
-			Include OBJECT_NAME { -v "**\\Users\\*\\.ssh\\id_*" }
-            		Include -access "READ"
+            	Include OBJECT_NAME { -v "**\\Users\\*\\.aws\\credentials" }
+				Include OBJECT_NAME { -v "**\Users\\*\\AppData\\Roaming\\GitHub CLI\\hosts.yml" }
+				Include OBJECT_NAME { -v "**\\Users\\*\\.npmrc" }
+				Include OBJECT_NAME { -v "**\\Users\\*\\.ssh\\id_*" }
+            	Include -access "READ"
         }
     }
 }

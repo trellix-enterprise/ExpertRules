@@ -13,12 +13,12 @@ Process
 ```tcl
 Rule {
     Process {
-	Include OBJECT_NAME { -v "node.exe" }
+	    Include OBJECT_NAME { -v "node.exe" }
         Include OBJECT_NAME {  -v "bun.exe"  }    }
     Target {
         Match PROCESS {
             	Include OBJECT_NAME { -v "python.exe" }
-		Include OBJECT_NAME { -v "python3.exe" }
+		        Include OBJECT_NAME { -v "python3.exe" }
             	Include PROCESS_CMD_LINE { -v "*setup.py*" }
             	Include -access "CREATE"
         }
