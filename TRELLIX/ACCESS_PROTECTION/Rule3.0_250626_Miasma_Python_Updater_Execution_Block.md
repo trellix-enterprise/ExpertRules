@@ -14,7 +14,8 @@ Process
 Rule {
     Process {
 	    Include OBJECT_NAME { -v "node.exe" }
-        Include OBJECT_NAME {  -v "bun.exe"  }    }
+        Include OBJECT_NAME {  -v "bun.exe"  }    
+    }
     Target {
         Match PROCESS {
             	Include OBJECT_NAME { -v "python.exe" }
