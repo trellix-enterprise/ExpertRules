@@ -4,7 +4,7 @@
 Trellix
 
 ## Description
-This rule detects DLL Hijacking via Windows Problem Reporting — specifically targeting a known technique where attackers abuse WerFault.exe / wermgr.exe to load a malicious phoneinfo.dll.
+This rule detects DLL Hijacking via Windows Problem Reporting — specifically targeting a known technique where attackers abuse wermgr.exe to load a malicious phoneinfo.dll.
 
 ## Rule Class 
 Files
