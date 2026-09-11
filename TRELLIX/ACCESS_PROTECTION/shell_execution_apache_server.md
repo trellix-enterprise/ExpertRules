@@ -1,10 +1,10 @@
-#Suspicious shell execution from apache server
+# Suspicious shell execution from apache server
 
 ## Author
 Trellix
 
 ## Description
-This expert rule detects Suspicious shell execution from apache server An Apache server executing cmd.exe usually refers to one of three completely different scenarios: a critical security breach (Remote Code Execution), a legitimate administrative startup task, or a Windows CGI script configuration.
+This expert rule detects Suspicious shell execution from apache server. An apache server executing cmd.exe usually refers to one of three completely different scenarios: a critical security breach (Remote Code Execution), a legitimate administrative startup task, or a Windows CGI script configuration.
 
 
 ## Rule Class 
