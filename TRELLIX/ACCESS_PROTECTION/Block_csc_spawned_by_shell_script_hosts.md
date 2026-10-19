@@ -13,23 +13,19 @@ Process
 ```tcl
 Rule {
     Process {
-        Include OBJECT_NAME {
-            -v "powershell.exe"
-            -v "pwsh.exe"
-            -v "cmd.exe"
-            -v "wscript.exe"
-            -v "cscript.exe"
-            -v "mshta.exe"
-        }
+        Include OBJECT_NAME { -v "powershell.exe" }
+        Include OBJECT_NAME { -v "pwsh.exe" }
+        Include OBJECT_NAME { -v "cmd.exe" }
+        Include OBJECT_NAME { -v "wscript.exe" }
+        Include OBJECT_NAME { -v "cscript.exe" }
+        Include OBJECT_NAME { -v "mshta.exe" }
     }
 
     Target {
         Match PROCESS {
             Include OBJECT_NAME { -v "csc.exe" }
-            Include PROCESS_CMD_LINE {
-                -v "*target:library*"       
-                -v "*target:exe*"
-             }
+            Include PROCESS_CMD_LINE { -v "*/target:library*" }
+            Include PROCESS_CMD_LINE { -v "*/target:exe*" }
             Include -access "CREATE"
         }
     }

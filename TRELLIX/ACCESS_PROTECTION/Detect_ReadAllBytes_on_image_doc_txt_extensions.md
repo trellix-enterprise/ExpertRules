@@ -13,24 +13,18 @@ Process
 ```tcl
 Rule {
     Process {
-        Include OBJECT_NAME {
-            -v "explorer.exe"
-            -v "cmd.exe"
-            -v "services.exe"
-        }
+        Include OBJECT_NAME { -v "explorer.exe" }
+        Include OBJECT_NAME { -v "cmd.exe" }
+        Include OBJECT_NAME { -v "services.exe" }
     }
     Target {
         Match PROCESS {
-            Include OBJECT_NAME {
-                -v "powershell.exe"
-                -v "pwsh.exe"
-            }
-            Include PROCESS_CMD_LINE {
-                -v "*ReadAllBytes*.png*Assembly*"   
-                -v "*ReadAllBytes*.jpg*Assembly*"
-                -v "*ReadAllBytes*.txt*Assembly*"   
-                -v "*ReadAllBytes*.pdf*Assembly*"
-            }
+            Include OBJECT_NAME { -v "powershell.exe" }
+            Include OBJECT_NAME { -v "pwsh.exe" }
+            Include PROCESS_CMD_LINE { -v "*ReadAllBytes*.png*Assembly*" }
+            Include PROCESS_CMD_LINE { -v "*ReadAllBytes*.jpg*Assembly*" }
+            Include PROCESS_CMD_LINE { -v "*ReadAllBytes*.txt*Assembly*" }
+            Include PROCESS_CMD_LINE { -v "*ReadAllBytes*.pdf*Assembly*" }
             Include -access "CREATE"
         }
     }

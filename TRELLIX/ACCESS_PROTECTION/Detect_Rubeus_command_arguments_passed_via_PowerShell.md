@@ -13,27 +13,21 @@ Process
 ```tcl
 Rule {
     Process {
-        Include OBJECT_NAME {
-            -v "explorer.exe"
-            -v "cmd.exe"
-            -v "services.exe"
-        }
+        Include OBJECT_NAME { -v "explorer.exe" }
+        Include OBJECT_NAME { -v "cmd.exe" }
+        Include OBJECT_NAME { -v "services.exe" }
     }
     Target {
         Match PROCESS {
-            Include OBJECT_NAME {
-                -v "powershell.exe"
-                -v "pwsh.exe"
-            }
-            Include PROCESS_CMD_LINE {
-                -v "*Rubeus*"                       
-                -v "*rubeus*"                       
-                -v "*kerberoast*"                   
-                -v "*asktgt*"                       
-                -v "*asktgs*"                       
-                -v "*harvest*"
-                -v "*monitor*"
-            }
+            Include OBJECT_NAME { -v "powershell.exe" }
+            Include OBJECT_NAME { -v "pwsh.exe" }
+            Include PROCESS_CMD_LINE { -v "*Rubeus*" }
+            Include PROCESS_CMD_LINE { -v "*rubeus*" }
+            Include PROCESS_CMD_LINE { -v "*kerberoast*" }
+            Include PROCESS_CMD_LINE { -v "*asktgt*" }
+            Include PROCESS_CMD_LINE { -v "*asktgs*" }
+            Include PROCESS_CMD_LINE { -v "*harvest*" }
+            Include PROCESS_CMD_LINE { -v "*monitor*" }
             Include -access "CREATE"
         }
     }

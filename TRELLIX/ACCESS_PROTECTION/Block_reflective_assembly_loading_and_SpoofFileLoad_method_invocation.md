@@ -13,28 +13,22 @@ Process
 ```tcl
 Rule {
     Process {
-        Include OBJECT_NAME {
-            -v "explorer.exe"
-            -v "cmd.exe"
-            -v "services.exe"
-        }
+        Include OBJECT_NAME { -v "explorer.exe" }
+        Include OBJECT_NAME { -v "cmd.exe" }
+        Include OBJECT_NAME { -v "services.exe" }
     }
     Target {
         Match PROCESS {
-            Include OBJECT_NAME {
-                -v "powershell.exe"
-                -v "pwsh.exe"
-            }
-            Include PROCESS_CMD_LINE {
-                -v "*\[System.Reflection.Assembly\]::Load*"
-                -v "*Assembly]::LoadFrom*"             
-                -v "*SpoofFileLoad*"                   
-                -v "*TrollAmsiDOTNET*"                 
-                -v "*TrollamsiDOTNET*"                 
-                -v "*.EntryPoint.Invoke*"              
-                -v "*0x4D, 0x5A*"                      
-                -v "*MZHeader*"                        
-            }
+            Include OBJECT_NAME { -v "powershell.exe" }
+            Include OBJECT_NAME { -v "pwsh.exe" }
+            Include PROCESS_CMD_LINE { -v "*\[System.Reflection.Assembly\]::Load*" }
+            Include PROCESS_CMD_LINE { -v "*Assembly]::LoadFrom*" }
+            Include PROCESS_CMD_LINE { -v "*SpoofFileLoad*" }
+            Include PROCESS_CMD_LINE { -v "*TrollAmsiDOTNET*" }
+            Include PROCESS_CMD_LINE { -v "*TrollamsiDOTNET*" }
+            Include PROCESS_CMD_LINE { -v "*.EntryPoint.Invoke*" }
+            Include PROCESS_CMD_LINE { -v "*0x4D, 0x5A*" }
+            Include PROCESS_CMD_LINE { -v "*MZHeader*" }
             Include -access "CREATE"
         }
     }
