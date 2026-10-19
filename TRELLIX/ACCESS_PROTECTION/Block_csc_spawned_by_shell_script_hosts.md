@@ -20,8 +20,7 @@ Rule {
         Include OBJECT_NAME { -v "cscript.exe" }
         Include OBJECT_NAME { -v "mshta.exe" }
     }
-
-    Target {
+	Target {
         Match PROCESS {
             Include OBJECT_NAME { -v "csc.exe" }
             Include PROCESS_CMD_LINE { -v "*/target:library*" }
