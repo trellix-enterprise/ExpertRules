@@ -14,23 +14,23 @@ File
 ## Rule TCL
 ```tcl
 Rule {
-										Process {
-												Include DESCRIPTION { -v "Consent UI for administrative applications" }
-										}
-										Target {
-												Match FILE {
-															Include OBJECT_NAME { -v "hid.dll" }
-															Exclude OBJECT_NAME { -v "**\\Windows\\WinSxS\\**\\hid.dll" }
-															Exclude OBJECT_NAME { 
-																-v "**\\Windows\\System32\\hid.dll"
-																if { [iSystem os_arch] == 640 } {
-																	-v "**\\Windows\\SysWOW64\\hid.dll"
-																}
-														}
-														Include -access "EXECUTE"
-												}
-										}
-									}
+	Process {
+		Include DESCRIPTION { -v "Consent UI for administrative applications" }
+	}
+	Target {
+		Match FILE {
+			Include OBJECT_NAME { -v "hid.dll" }
+			Exclude OBJECT_NAME { -v "**\\Windows\\WinSxS\\**\\hid.dll" }
+			Exclude OBJECT_NAME {
+				-v "**\\Windows\\System32\\hid.dll"
+				if { [iSystem os_arch] == 640 } {
+					-v "**\\Windows\\SysWOW64\\hid.dll"
+				}
+			}
+			Include -access "EXECUTE"
+		}
+	}
+}
 ```
 
 ## Tested Platforms
