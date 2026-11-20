@@ -14,17 +14,17 @@ File
 ```tcl
 Rule {
 	Target {
-        	Match PROCESS {
-            			Include OBJECT_NAME { -v "ssh.exe" }
-				Include PROCESS_CMD_LINE { -v "*-R *:*:3389*" }
-            			Include PROCESS_CMD_LINE { -v "**\\ProgramData\\ssh\\tmp*\\* -R *:*:*" }
-				Include PROCESS_CMD_LINE { -v "**\\ProgramData\\ssh\\temp*\\* -R *:*:*" }
-				Include PROCESS_CMD_LINE { -v "*-R *:*:* **\\ProgramData\\ssh\\tmp*\\*" }
-				Include PROCESS_CMD_LINE { -v "*-R *:*:* **\\ProgramData\\ssh\\temp*\\*" }
-				Include PROCESS_CMD_LINE { -v "*-R *:*:* UserKnownHostsFile*" }
-				Include PROCESS_CMD_LINE { -v "*UserKnownHostsFile* -R *:*:*" }
-				Include -access "CREATE"
-          	}
+		Match PROCESS {
+			Include OBJECT_NAME { -v "ssh.exe" }
+			Include PROCESS_CMD_LINE { -v "*-R *:*:3389*" }
+			Include PROCESS_CMD_LINE { -v "**\\ProgramData\\ssh\\tmp*\\* -R *:*:*" }
+			Include PROCESS_CMD_LINE { -v "**\\ProgramData\\ssh\\temp*\\* -R *:*:*" }
+			Include PROCESS_CMD_LINE { -v "*-R *:*:* **\\ProgramData\\ssh\\tmp*\\*" }
+			Include PROCESS_CMD_LINE { -v "*-R *:*:* **\\ProgramData\\ssh\\temp*\\*" }
+			Include PROCESS_CMD_LINE { -v "*-R *:*:* UserKnownHostsFile*" }
+			Include PROCESS_CMD_LINE { -v "*UserKnownHostsFile* -R *:*:*" }
+			Include -access "CREATE"
+		}
 	}
 }
 ```

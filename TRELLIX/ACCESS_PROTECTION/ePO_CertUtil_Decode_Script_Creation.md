@@ -13,22 +13,21 @@ File
 ## Rule TCL
 ```tcl
 Rule {
-        Target {
-          	Match PROCESS {
-            			Include DESCRIPTION { -v "CertUtil.exe" }
-            			Include PROCESS_CMD_LINE { 
-						-v "*decode *.ps1*"
-                        			-v "*decode *.vbs*"
-						-v "*decode *.js*"
-						-v "*decode *.bat*"
-						-v "*decodehex *.ps1*"
-						-v "*decodehex *.vbs*"
-						-v "*decodehex *.js*"
-						-v "*decodehex *.bat*"
-
-            			}
-            			Include -access "CREATE"
-          	}
+	Target {
+		Match PROCESS {
+			Include DESCRIPTION { -v "CertUtil.exe" }
+			Include PROCESS_CMD_LINE {
+				-v "*decode *.ps1*"
+				-v "*decode *.vbs*"
+				-v "*decode *.js*"
+				-v "*decode *.bat*"
+				-v "*decodehex *.ps1*"
+				-v "*decodehex *.vbs*"
+				-v "*decodehex *.js*"
+				-v "*decodehex *.bat*"
+			}
+			Include -access "CREATE"
+		}
 	}
 }
 ```
