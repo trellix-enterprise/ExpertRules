@@ -30,6 +30,8 @@ Rule {
 }
 ```
 
+  The rule must start with `Rule {` (put comments inside the block) and should lint clean: `python3 skills/tools/lint_rule_docs.py your_rule.md`. An AI assistant with the [ens-expert-rules skill](../skills/README.md) can draft and check rules for you.
+
 * **Trigger**: Some steps to trigger the rule and verify that it actually works. You can put a reference here to any public and safe tool. 
 
 * **Tested Platforms**: Provide the tested platform information like the OS version, OS architecture, Application name, Application version, Endpoint Security Product version, etc. 

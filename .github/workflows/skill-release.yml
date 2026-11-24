@@ -1,0 +1,31 @@
+name: Skill release
+
+# Push a tag like skill-v0.2.0 to publish ens-expert-rules.zip as a GitHub release.
+on:
+  push:
+    tags: ["skill-v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Validate before packaging
+        working-directory: skills
+        run: python tools/validate_skill.py ens-expert-rules
+      - name: Package skill (zip root is the ens-expert-rules folder)
+        working-directory: skills
+        run: zip -r ../ens-expert-rules.zip ens-expert-rules -x '*/__pycache__/*'
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release create "$GITHUB_REF_NAME" ens-expert-rules.zip
+          --title "ENS Expert Rules skill ${GITHUB_REF_NAME#skill-}"
+          --notes-file skills/RELEASE_NOTES.md

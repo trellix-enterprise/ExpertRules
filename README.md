@@ -12,6 +12,22 @@ The rules are classified into 2 major groups:
 IMPORTANT: Trellix recommends testing Expert Rules in a non-production test environment to ensure rule integrity, and to prevent conflicts with unique environment configurations. Customers should exercise caution when deploying Expert Rules in their environment.
 
 
+## 🤖 Write Expert Rules with your AI assistant
+
+The [`skills/`](skills) folder contains **`ens-expert-rules`**, an [Agent Skill](https://agentskills.io) that teaches AI coding assistants — **Claude Code, GitHub Copilot, OpenAI Codex, Cursor, Gemini CLI** and others — to write, review, fix and lint Expert Rules in the style of the rules in this repository. Describe the behaviour you want to block or report in plain English; the assistant writes the rule, checks it with the bundled linter (verified against the ENS rule compiler), and tells you what to enter in the ePO Expert Rule form.
+
+| Your assistant | Install |
+| --- | --- |
+| Any (Claude Code, Copilot, Codex, Cursor, Gemini CLI, …) | `npx skills add trellix-enterprise/ExpertRules --skill ens-expert-rules` |
+| Claude Code | `/plugin install ens-expert-rules --marketplace trellix-enterprise/ExpertRules` |
+| Gemini CLI | `gemini skills install https://github.com/trellix-enterprise/ExpertRules.git --path skills/ens-expert-rules` |
+| Claude apps / manual | Download `ens-expert-rules.zip` from [Releases](https://github.com/trellix-enterprise/ExpertRules/releases), or copy [`skills/ens-expert-rules`](skills/ens-expert-rules) into your assistant's skills folder |
+
+Then ask, for example: *"Write an ENS Expert Rule that blocks Microsoft Word from starting PowerShell."* See the **[skill install & usage guide](skills/README.md)** for every assistant, manual installation, verification and updates.
+
+AI-generated rules follow the same advice as every rule here: check them in the console's Expert Rule Checker and test in report-only mode before blocking.
+
+
 ## 🚀 Adding an Expert Rule
 
 1. Log on to EPO Console using your credentials
@@ -30,8 +46,9 @@ IMPORTANT: Trellix recommends testing Expert Rules in a non-production test envi
 ![image](https://user-images.githubusercontent.com/89252889/184321778-48601b6b-ecc4-4469-b799-5dc933608b05.png)
 
 
-7. Fill in details for *`Rule name`*, *`Severity`*, *`Action`*, *`Rule Type`* and *`Rule Content`*
-8. Click on `Save` to save an expert rule
+7. Fill in details for *`Rule name`*, *`Severity`*, *`Action`*, *`Rule Type`* and *`Rule Content`* (the content must start with `Rule {`)
+8. Click on `Check` in the Expert Rule Checker to compile the rule — one rule that fails to compile disables all Expert Rules on the endpoint
+9. Click on `Save` to save an expert rule
 
 
 ## Support
@@ -42,7 +59,8 @@ To know more on support for custom ENS rules. Refer [KB94889](https://thrive.tre
 ## Resources
 [Expert Rules training](https://training-catalog.trellix.com/Course/148256/elearning-detection-and-prevention-with-ens-expert-rules-essentials) <br/>
 [10.7.x Product guide – Using Expert Rules](https://docs.trellix.com/bundle/endpoint-security-10.7.x-product-guide-windows/page/UUID-d11e2e43-4e3e-ce8d-299e-63d86b0ab48f.html) <br/>
+[ENS Expert Rules AI agent skill – install & usage guide](skills/README.md) <br/>
 
 ## 🤝 Contributing
 
-Thanks for taking the time to [contribute](COMMUNITY)!
+Thanks for taking the time to [contribute](COMMUNITY)! Pull requests that add or change rule documents are checked automatically by the **Rule lint** workflow; run `python3 skills/tools/lint_rule_docs.py <your_rule.md>` to check before you open one. Improvements to the AI skill are welcome too — see [skills/README.md](skills/README.md#contributing-to-the-skill).

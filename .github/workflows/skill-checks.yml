@@ -1,0 +1,61 @@
+name: Skill checks
+
+# Validates the ENS Expert Rules agent skill. Runs only when the skill or its tooling changes.
+on:
+  pull_request:
+    paths:
+      - "skills/**"
+      - ".claude-plugin/**"
+      - ".github/workflows/skill-checks.yml"
+  push:
+    branches: [main]
+    paths:
+      - "skills/**"
+      - ".claude-plugin/**"
+      - ".github/workflows/skill-checks.yml"
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    working-directory: skills
+
+jobs:
+  validate-skill:
+    name: Agent Skills spec + examples
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Validate skill folder (spec, links, size budget, example rules)
+        run: python tools/validate_skill.py ens-expert-rules
+      - name: Validate Claude Code marketplace manifest
+        working-directory: .
+        run: python -c "import json; m = json.load(open('.claude-plugin/marketplace.json')); assert m['plugins'][0]['skills'] == ['./skills/ens-expert-rules'], m"
+      - name: Reference validator (skills-ref)
+        continue-on-error: true   # advisory: installs from github.com
+        run: |
+          pip install "git+https://github.com/agentskills/agentskills.git#subdirectory=skills-ref"
+          skills-ref validate ens-expert-rules
+
+  tests:
+    name: tests (${{ matrix.os }}, py${{ matrix.python-version }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ["3.8", "3.13"]
+        exclude:
+          - os: macos-latest
+            python-version: "3.8"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Linter + spec unit tests
+        run: python -m unittest discover -s tests -v
