@@ -1,0 +1,11 @@
+# expect:W209
+Rule {
+    Reaction BLOCK
+    Target {
+        Match VALUE {
+            Include OBJECT_NAME { -v "HKLM\\Software\\Example\\Value" }
+            Include REGVAL_DATA -type MULTI_STRING { -v "alpha\0beta\0\0" }
+            Include -access "CREATE WRITE"
+        }
+    }
+}

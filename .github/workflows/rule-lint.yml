@@ -1,0 +1,33 @@
+name: Rule lint
+
+# Lints the Expert Rules in rule documents a pull request adds or changes, using the
+# skill's linter. Findings appear as annotations on the PR's "Files changed" tab.
+# Only changed files are checked, so existing documents are not blocked until edited.
+on:
+  pull_request:
+    paths:
+      - "TRELLIX/**.md"
+      - "COMMUNITY/**.md"
+
+permissions:
+  contents: read
+
+jobs:
+  lint-changed-rules:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Lint changed rule documents
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          git diff --name-only --diff-filter=AMR "$BASE" "$HEAD" -- 'TRELLIX/*.md' 'COMMUNITY/*.md' > changed.txt
+          cat changed.txt
+          if [ ! -s changed.txt ]; then echo "No rule documents changed."; exit 0; fi
+          tr '\n' '\0' < changed.txt | xargs -0 python skills/tools/lint_rule_docs.py --github

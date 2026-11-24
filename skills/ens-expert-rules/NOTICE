@@ -1,0 +1,16 @@
+ens-expert-rules
+Copyright 2026 Trellix
+
+This product is licensed under the Apache License, Version 2.0 (the
+"License"); see the LICENSE file in this repository or
+http://www.apache.org/licenses/LICENSE-2.0 for the full terms.
+
+Portions of the reference material and example rules in this project are
+adapted from the Trellix Expert Rules sample repository:
+
+    https://github.com/trellix-enterprise/ExpertRules
+    Licensed under the Apache License, Version 2.0.
+
+Trellix and the Trellix logo are trademarks of Musarubra US LLC and/or its
+affiliates. Use of these names is for identification and description only
+and does not imply endorsement.

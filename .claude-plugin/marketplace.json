@@ -1,0 +1,15 @@
+{
+  "name": "trellix-expert-rules",
+  "owner": { "name": "Trellix" },
+  "description": "Trellix ENS Exploit Prevention Expert Rules skill for Claude Code",
+  "plugins": [
+    {
+      "name": "ens-expert-rules",
+      "source": "./",
+      "description": "Write, review, fix and lint Trellix ENS Exploit Prevention Expert Rules",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/trellix-enterprise/ExpertRules/tree/main/skills",
+      "skills": ["./skills/ens-expert-rules"]
+    }
+  ]
+}
