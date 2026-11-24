@@ -45,7 +45,8 @@ def md_files(paths):
         p = Path(p)
         if p.is_dir():
             yield from sorted(x for x in p.rglob("*.md") if x.name.lower() != "readme.md")
-        elif p.suffix.lower() == ".md" and p.exists():
+        elif p.suffix.lower() == ".md" and p.name.lower() != "readme.md" and p.exists():
+            # README files hold templates/placeholders, not publishable rules
             yield p
 
 

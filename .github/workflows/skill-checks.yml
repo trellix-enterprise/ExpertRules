@@ -50,6 +50,8 @@ jobs:
         os: [ubuntu-latest, windows-latest, macos-latest]
         python-version: ["3.8", "3.13"]
         exclude:
+          - os: ubuntu-latest   # 3.8 is not built for current Ubuntu runners; Windows covers it
+            python-version: "3.8"
           - os: macos-latest
             python-version: "3.8"
     steps:

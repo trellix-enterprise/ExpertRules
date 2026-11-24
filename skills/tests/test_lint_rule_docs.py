@@ -74,6 +74,9 @@ class LintRuleDocsTests(unittest.TestCase):
             r = self.run_tool(d)
             self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
             self.assertIn("0 file(s), 0 rule(s)", r.stderr)
+            # also when the README is named explicitly (as the PR workflow does)
+            r = self.run_tool(str(Path(d) / "README.md"))
+            self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
 
 
 if __name__ == "__main__":
