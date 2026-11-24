@@ -5,6 +5,7 @@
     python3 lint_rule_docs.py --github path/to/rule.md     # PR annotations
     python3 lint_rule_docs.py --errors-only --summary TRELLIX
 
+INFO findings (style nits such as trailing whitespace) are hidden unless --info.
 Every fenced code block (``` or ```tcl) that contains `Rule {` is linted with the skill's
 lint_expert_rule.py. Findings are reported with the line number in the .md file.
 Exit code: 0 = no ERRORs, 1 = at least one ERROR, 2 = usage error.
@@ -52,7 +53,8 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("paths", nargs="+", help=".md files or folders")
     ap.add_argument("--github", action="store_true", help="emit GitHub Actions annotations")
-    ap.add_argument("--errors-only", action="store_true", help="hide WARNING/INFO findings")
+    ap.add_argument("--errors-only", action="store_true", help="hide WARNING findings too")
+    ap.add_argument("--info", action="store_true", help="also show INFO findings (style nits)")
     ap.add_argument("--summary", action="store_true", help="print totals per finding code")
     args = ap.parse_args()
 
@@ -73,6 +75,8 @@ def main() -> int:
                     n_warn += 1
                 by_code[f.code] = by_code.get(f.code, 0) + 1
                 if args.errors_only and f.severity != L.Severity.ERROR:
+                    continue
+                if f.severity == L.Severity.INFO and not args.info:
                     continue
                 line = offset + f.line - 1
                 path = md.as_posix()
