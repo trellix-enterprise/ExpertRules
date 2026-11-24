@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+- **Published from trellix-enterprise/ExpertRules.** `tools/export_skill_repo.py
+  --into-expertrules <clone>` adds the skill under `skills/` with an install guide for every
+  agent, a Claude Code plugin marketplace manifest, path-filtered CI (skill checks, rule
+  lint on changed rule documents, `skill-v*` release zips). The skill's homepage now points
+  there.
+- **New `tools/lint_rule_docs.py`** lints the rules inside Markdown rule documents, with
+  GitHub annotations (`--github`) and Markdown line numbers.
 - **Evaluation harness (`eval/`).** `extract_tasks.py` builds a blind task set from the public
   ExpertRules corpus, `run_agent_eval.py` runs it through Claude Code, Copilot, Gemini, Codex
   or Cursor CLIs with the skill in each agent's project skill folder (`--model`,
